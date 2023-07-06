@@ -85,7 +85,6 @@ const todos = (state = initialState, action) => {
       };
 
     case GET_TODO_BY_ID:
-      console.log("액션에는 잘 들어오니?", action.payload);
       return {
         ...state,
         todo: state.todos.find((todo) => {

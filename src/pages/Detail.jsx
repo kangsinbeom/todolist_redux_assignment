@@ -7,9 +7,7 @@ import { getTodoByID } from "../redux/modules/todos.js";
 const Detail = () => {
   const dispatch = useDispatch();
   const todo = useSelector((state) => state.todos.todo);
-  console.log("todo", todo);
   const { id } = useParams();
-  console.log("여기요", id);
   const navigate = useNavigate();
   useEffect(() => {
     dispatch(getTodoByID(id));
